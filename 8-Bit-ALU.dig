@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <circuit>
   <version>1</version>
-  <attributes/>
+  <attributes>
+    <entry>
+      <string>Width</string>
+      <int>5</int>
+    </entry>
+  </attributes>
   <visualElements>
     <visualElement>
       <elementName>ALU.dig</elementName>
@@ -104,6 +109,16 @@
       <elementAttributes>
         <entry>
           <string>Label</string>
+          <string>c_{IN}</string>
+        </entry>
+      </elementAttributes>
+      <pos x="-160" y="400"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
           <string>INVA</string>
         </entry>
       </elementAttributes>
@@ -130,16 +145,6 @@
       <pos x="-160" y="40"/>
     </visualElement>
     <visualElement>
-      <elementName>Const</elementName>
-      <elementAttributes>
-        <entry>
-          <string>Value</string>
-          <long>0</long>
-        </entry>
-      </elementAttributes>
-      <pos x="60" y="400"/>
-    </visualElement>
-    <visualElement>
       <elementName>In</elementName>
       <elementAttributes>
         <entry>
@@ -148,16 +153,6 @@
         </entry>
       </elementAttributes>
       <pos x="-160" y="520"/>
-    </visualElement>
-    <visualElement>
-      <elementName>In</elementName>
-      <elementAttributes>
-        <entry>
-          <string>Label</string>
-          <string>F1</string>
-        </entry>
-      </elementAttributes>
-      <pos x="-160" y="560"/>
     </visualElement>
     <visualElement>
       <elementName>Splitter</elementName>
@@ -174,16 +169,6 @@
       <elementAttributes>
         <entry>
           <string>Label</string>
-          <string>carry_{out}</string>
-        </entry>
-      </elementAttributes>
-      <pos x="3860" y="320"/>
-    </visualElement>
-    <visualElement>
-      <elementName>Out</elementName>
-      <elementAttributes>
-        <entry>
-          <string>Label</string>
           <string>output</string>
         </entry>
         <entry>
@@ -192,6 +177,26 @@
         </entry>
       </elementAttributes>
       <pos x="3860" y="620"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>carry_{out}</string>
+        </entry>
+      </elementAttributes>
+      <pos x="3860" y="320"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>F1</string>
+        </entry>
+      </elementAttributes>
+      <pos x="-160" y="560"/>
     </visualElement>
   </visualElements>
   <wires>
@@ -348,7 +353,7 @@
       <p2 x="3440" y="400"/>
     </wire>
     <wire>
-      <p1 x="60" y="400"/>
+      <p1 x="-160" y="400"/>
       <p2 x="140" y="400"/>
     </wire>
     <wire>
